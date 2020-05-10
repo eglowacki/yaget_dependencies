@@ -20,6 +20,7 @@ steps:
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
+
 - task: CmdLine@2
   inputs:
     script: 'mkdir builds'
@@ -31,11 +32,17 @@ steps:
     workingDirectory: 'assimp-5.0.1/builds'
     cmakeArgs: '../ -DASSIMP_BUILD_ZLIB=ON'
 
-- task: DownloadPipelineArtifact@2
+- task: CmdLine@2
   inputs:
-    buildType: 'current'
-    targetPath: '$(Pipeline.Workspace)'
-    
+    script: 'dir'
+    workingDirectory: 'assimp-5.0.1'
+
+- task: CmdLine@2
+  inputs:
+    script: 'dir'
+    workingDirectory: 'assimp-5.0.1\builds'
+    failOnStderr: true
+
 # - task: VSBuild@1
 #   inputs:
 #     solution: '$(solution)'
