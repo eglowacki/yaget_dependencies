@@ -31,6 +31,11 @@ steps:
     workingDirectory: 'assimp-5.0.1/builds'
     cmakeArgs: '../ -DASSIMP_BUILD_ZLIB=ON'
 
+- task: DownloadPipelineArtifact@2
+  inputs:
+    buildType: 'current'
+    targetPath: '$(Pipeline.Workspace)'
+    
 # - task: VSBuild@1
 #   inputs:
 #     solution: '$(solution)'
