@@ -52,7 +52,8 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'assimp-5.0.1/builds/Debug/unit.exe'
+    script: 'unit.exe'
+    workingDirectory: 'assimp-5.0.1/builds/Debug'
 
 # - task: CmdLine@2
 #   inputs:
