@@ -14,16 +14,16 @@ variables:
   buildPlatform: 'x64'
   buildConfiguration: 'Release'
 
-- task: CmdLine@2
-  inputs:
-    script: 'DIRCMD = /OGN'
-
 steps:
 - task: NuGetToolInstaller@1
 
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
+
+- task: CmdLine@2
+  inputs:
+    script: 'SET DIRCMD=/OGN'
 
 - task: CmdLine@2
   inputs:
