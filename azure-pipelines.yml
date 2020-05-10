@@ -52,7 +52,7 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'dir'
+    script: 'dir /S'
     workingDirectory: 'assimp-5.0.1\builds'
     failOnStderr: true
 
