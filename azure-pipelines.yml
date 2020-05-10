@@ -53,7 +53,7 @@ steps:
 - task: CmdLine@2
   inputs:
     script: 'unit.exe'
-    workingDirectory: 'assimp-5.0.1/builds/Debug'
+    workingDirectory: 'assimp-5.0.1/builds/bin/Debug'
 
 # - task: CmdLine@2
 #   inputs:
