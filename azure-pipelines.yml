@@ -38,7 +38,7 @@ steps:
 
 - task: VSBuild@1
   inputs:
-    solution: 'assimp-5.0.1\builds\*.sln'
+    solution: 'assimp-5.0.1/builds/*.sln'
     vsVersion: '16.0'
     platform: 'x64'
     configuration: 'Debug'
@@ -50,12 +50,14 @@ steps:
     script: 'dir'
     workingDirectory: 'assimp-5.0.1'
 
-
+- task: CmdLine@2
+  inputs:
+    script: 'assimp-5.0.1/builds/Debug/unit.exe'
 
 # - task: CmdLine@2
 #   inputs:
 #     script: 'dir /S'
-#     workingDirectory: 'assimp-5.0.1\builds'
+#     workingDirectory: 'assimp-5.0.1/builds'
 #     failOnStderr: true
 
 # - task: VSBuild@1
