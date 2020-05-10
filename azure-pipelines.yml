@@ -23,7 +23,7 @@ steps:
 
 - task: CMake@1
   inputs:
-    workingDirectory: 'assimp-5.0.1\builds'
+    workingDirectory: 'assimp-5.0.1'
     cmakeArgs: '-DASSIMP_BUILD_ZLIB=ON'
 
 # - task: VSBuild@1
