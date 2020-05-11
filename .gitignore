@@ -4,7 +4,6 @@
 # Compiled Object files
 *.slo
 *.lo
-Shaders/Compiled/
 *.o
 
 # Precompiled Headers
