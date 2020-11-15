@@ -396,7 +396,7 @@ public:
         if (buf[0] != '\x1b' || buf[1] != '[') {
             throw std::runtime_error("get_cursor_position(): Invalid response");
         }
-        if (sscanf(&buf[2], "%d;%d", &rows, &cols) != 2) {
+        if (sscanf_s(&buf[2], "%d;%d", &rows, &cols) != 2) {
             throw std::runtime_error("get_cursor_position(): Invalid response");
         }
     }
