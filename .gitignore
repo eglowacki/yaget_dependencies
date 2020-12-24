@@ -38,3 +38,5 @@ DirectXTex-170/DirectXTex/Shaders/Compiled/
 
 #Temp Fixes
 boost_1_74_0/
+
+*.pdb
