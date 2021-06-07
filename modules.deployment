@@ -1,0 +1,17 @@
+{
+    "Configuration": {
+        "Common": [
+            "Modules/7z-1900/x64/7za.dll",
+            "Experimental/Modules/PythonEmbed-3.8/python38._pth",
+            "Experimental/Modules/PythonEmbed-3.8/python38.zip",
+            "Experimental/Modules/Python-3.8.2/PCbuild/amd64/python3.dll",
+            "Experimental/Modules/Python-3.8.2/PCbuild/amd64/python38.dll"
+        ],
+        "Debug": [
+            "Experimental/Modules/RADTelemetry/External/Dll/rad_tm_win64_d.dll"
+        ],
+        "Release": [
+            "Experimental/Modules/RADTelemetry/External/Dll/rad_tm_win64.dll"
+        ]
+    }
+}
