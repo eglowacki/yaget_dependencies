@@ -40,3 +40,5 @@ DirectXTex-170/DirectXTex/Shaders/Compiled/
 boost_1_74_0/
 
 *.pdb
+
+D3D12MemoryAllocator/
